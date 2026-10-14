@@ -235,3 +235,7 @@ h3{
 .section-meals{
     padding: 0;
 }
+
+.section-feature .long-copy{
+    margin-bottom: 30px;
+}
