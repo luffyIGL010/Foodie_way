@@ -230,6 +230,15 @@ h3{
     transform: scale(1.1);
     opacity: 1;
 }
+.clear-fix {zoom: 1}
+.clear-fix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 
 
 .section-meals{
@@ -279,3 +288,17 @@ h3{
 
 }
 
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.btn-app img{
+    height: 50%;
+    width: auto;
+    margin-right: 10px;
+}
+
+.section-steps{
+    background-color: #f4f4f4;
+
+}
