@@ -272,6 +272,7 @@ h3{
 
 .app-screen{
     width: 50%;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .works-step div{
@@ -282,6 +283,7 @@ h3{
     height: 55px;
     width: 55px;
     text-align: center;
+    margin-right: 25px;
     padding: 5px;
     float: left;
     font-size: 150%;
