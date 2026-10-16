@@ -20,6 +20,7 @@ html {
 
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/fooodieee.avif');
+    background-attachment: fixed;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -301,7 +302,95 @@ h3{
     margin-right: 10px;
 }
 
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+}
+
+
 .section-steps{
     background-color: #f4f4f4;
+
+}
+
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+}
+
+.city-feature{
+    font-size: 100%;
+    margin-bottom: 5px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.city-feature a:link,
+.city-feature a:visited{
+    color: #e67e22;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+.city-feature a:hover,
+.city-feature a:active{
+    color: #cf6d17;
+}
+
+
+
+.section-testimonials{
+    background-color:black;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+    position: relative;
+
+}
+
+cite{
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+
+}
+
+cite img{
+    border-radius: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+}
+
+blockquote::before{
+    content: "\201C";
+    color: #e67e22;
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    left: -3px;
+    top: 0;
+    
 
 }
