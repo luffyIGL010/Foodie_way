@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="resources/css/style.css">
         
-        
+        <link rel="stylesheet" href="resources/css/queries.css">
 
     </head>
     <body>
@@ -20,23 +20,23 @@
                 <div class="row">
                     <img class="logo" src="resources/img/images.png" alt="logo-img">
                     <ul class="main-nav">
-                    <li><a href="#">Food delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#feature">Food delivery</a></li>
+                    <li><a href="#hiw">How it works</a></li>
+                    <li><a href="#city">Our cities</a></li>
+                    <li><a href="#Sign-up">Sign up</a></li>
                 </ul>
                 </div>
                 
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-                <a class="btn btn-full" href="#">I'm hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class="btn btn-full" href="plans">I'm hungry</a>
+                <a class="btn btn-ghost" href="feature">Show me more</a>
             </div>
         </header>
 
 
-        <section class="section-feature">
+        <section class="section-feature" id="feature">
             <div class="row">
                 <h2>Get food fast &mdash; Not fast food</h2>
                 <p class="long-copy">
@@ -161,7 +161,7 @@
         </section>
 
 
-        <section class="section-steps">
+        <section class="section-steps" id="hiw">
             <div class="row">
                 <h2>How it works &mdash; Simple as 1,2,3</h2>
             </div>
@@ -200,7 +200,7 @@
         </section>
 
 
-        <section class="section-cities">
+        <section class="section-cities" id="city">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
@@ -308,7 +308,7 @@
 
 
 
-        <section class="section-plans">
+        <section class="section-plans" id="plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
@@ -398,7 +398,7 @@
         </section>
 
 
-        <section class="section-form">
+        <section class="section-form" id="Sign-up">
             <div class="row">
                 <h2>We're happy to hear from you</h2>
             </div>
@@ -524,19 +524,34 @@
 
             </div>
         </footer>
-
-
-
-
-
-
-
-
-
-
-
-       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+            
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+            </script>
 
     
         
