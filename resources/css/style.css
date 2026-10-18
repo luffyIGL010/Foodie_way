@@ -46,7 +46,8 @@ h1{
 }
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -57,7 +58,8 @@ h1{
 
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
     background-color: #e67e22;
     color: #fff;
     border-radius: 200px;
@@ -75,7 +77,8 @@ h1{
 
 
 .btn:hover,
-.btn:active{
+.btn:active,
+input[type=submit]{
     background-color: #cf6d17;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-3px);
@@ -450,4 +453,28 @@ blockquote::before{
     background-color: #fcfcff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100%;
+
+}
+
+input[tbody=checkbox]{
+    margin: 10px 5px 10px 0;
 }
